@@ -1,0 +1,25 @@
+#include <conio.h> // For function getch()
+#include <cstdlib>  // For several general-purpose functions
+#include <fstream>  // For file handling
+#include <iomanip>  // For formatted output
+#include <iostream>  // For cin, cout, and system
+#include <string>  // For string data type
+using namespace std;  // So "std::cout" may be abbreviated to "cout"
+
+int main()
+{
+	float g; //mass in grams
+	float d; //density in grams/cubic centimeter
+	float volume;
+
+	{
+		cout << "Please input the mass in grams: ";
+		cin >> g;
+		cout << "Please input the density in grams per cubic centimeter: ";
+		cin >> d;
+		volume = g / d;
+		cout << "Volume:" << volume << endl;
+	}
+	return 0;
+
+}
