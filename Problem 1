@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+
+	double total;
+	int Box, Sideline, Generaladmission, Premium, tquantityga, tquantityb, tquantitys, tquantityp;
+	Generaladmission	= 50;
+	Box					= 100;
+	Sideline			= 200;
+	Premium			    = 500;
+
+//Ticket quantity
+
+	cout <<"Enter number of tickets sold for Genaeral admission in the game" << endl;
+		cin >> tquantityga;
+	cout <<"Enter number of tickets sold for Box in the game" << endl;
+		cin >> tquantityb;
+	cout <<"Enter number of tickets sold for Sideline in the game" << endl;
+		cin >> tquantitys;
+	cout <<"Enter number of tickets sold for Premium in the game" << endl;
+		cin >> tquantityp;
+
+//Total of Tikcets
+
+		total = ( Generaladmission*tquantityga ) + (Box*tquantityb) + (Sideline*tquantitys) + (Premium*tquantityp);
+
+		cout <<"Total quantity of sales for General admission: "<< Generaladmission*tquantityga <<endl;
+		cout <<"Total quantity of sales for Box: "<< Box*tquantityb <<endl;
+		cout <<"Total quantity of sales for Sideline: "<< Sideline*tquantitys <<endl;
+		cout <<"Total quantity of sales for Premium: "<< Premium*tquantityp <<endl;
+		cout <<"Total quantity of sales for the game: "<< total <<endl;
+
+		_getch();
+		return 0;
+}
